@@ -1,0 +1,13 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /release/url-to-pdf
+hooks:
+  AfterInstall:
+      - location: /bin/aws-after-install.sh
+        runas: deploy
+  BeforeInstall:
+      - location: /bin/aws-before-install.sh
+        runas: deploy
+
