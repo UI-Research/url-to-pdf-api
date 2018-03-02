@@ -9,5 +9,7 @@ cd /var/www/url-to-pdf
 
 sudo chown -R deploy:deploy .
 
+/usr/bin/yarn
+
 sudo systemctl restart url-to-pdf.service
 
